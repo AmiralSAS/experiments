@@ -1,0 +1,1 @@
+﻿document.write("<script src=./js/Classes/class_case.js></script>");
