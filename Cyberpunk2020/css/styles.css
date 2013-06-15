@@ -1,0 +1,204 @@
+/*
+::Sommaire::
+@font-face neuropol
+@font-face Rationale
+@font-face Orbitron
+Styles généraux
+	html
+	body
+	header, footer
+	table
+	tr
+	td
+	caption,th
+	th
+	-->Titrage et textes
+		h1,h2,h3
+		h4,h5,h6,h7,h8
+		h1,h2
+		h3
+		h4
+	-->Divers
+		a
+		a:visited
+		a:hover
+Sélecteurs
+	ul>li
+	hgroup>img,h1,h2
+Classes
+	.inner
+	.titre
+	.contenu
+Id
+	#boutons
+	#inputAge
+	#generation
+	#generation:hover
+	#generation:active
+	#reset
+	#reset:hover
+	#reset:active
+*/
+	@font-face{
+		font-family: 'neuropol';
+		src: url('./fonts/NEUROPOL/NEUROPOL.ttf');
+	}
+
+	@font-face {
+		font-family: 'Rationale';
+		src: url('./fonts/Rationale/Rationale-Regular.ttf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'Orbitron';
+		src: url('./fonts/Orbitron/Orbitron-Black.ttf') format('truetype');
+		src: url('./fonts/Orbitron/Orbitron-Bold.ttf') format('truetype');
+		src: url('./fonts/Orbitron/Orbitron-Medium.ttf') format('truetype');
+		src: url('./fonts/Orbitron/Orbitron-Regular.ttf') format('truetype');
+	}
+
+
+/***********************/
+/*** Styles généraux ***/
+/***********************/
+	html{
+		background-color:#fff;
+		
+		margin:0px;
+		padding:0px;
+		
+		font-size:1em;
+		color:#000;
+		
+		cursor:crosshair;
+	}
+
+	body{
+		margin:10px;
+		padding:10px;
+		font-family: 'Rationale', sans-serif;
+	}
+	header, footer {
+		color:#ffffff;
+		text-align:center;
+	}
+	table{width:700px;}
+	tr{width: 960px;}
+	td{width: 700px; text-indent:15px;}
+	caption,th{font-family: neuropol;}
+	th{
+		background-color: #fff;
+		width: 250px;
+		
+		color: #000;
+		font-weight: bold;
+		text-align: right;
+		vertical-align:top;
+	}
+
+/*Titrage et textes*/
+	h1,h2,h3{
+		font-family: 'Orbitron', sans-serif;
+		text-transform: uppercase;
+		color:#ff0000;
+		margin: 10px;
+		padding: 10px;
+	}
+	h1,h2 {font-size: 1.5em;}
+	h3 {font-size: 1.3em;}
+	h4,h6{text-decoration:underline;}
+	h4,h5,h6,h7,h8{font-size: 1em;}
+/*Divers*/
+	a{
+		text-decoration:underline;
+		display:block;
+		color:#ffaa00;
+	}
+	a:visited{color:#ffaa00;}
+	a:hover{color:#ffaaaa;}
+
+/******************/
+/*** Sélecteurs ***/
+/******************/
+
+	ul>li{list-style-type:circle;}
+
+	hgroup>img,h1,h2{
+		display:block;
+		margin:auto;
+		text-align:center;
+	}
+
+/***********/
+/* CLASSES */
+/***********/
+
+	.inner{width:960px;margin:auto;}
+	.titre{background-color: #000;color: #fff;
+		text-align: center;text-transform:uppercase;}
+	.contenu{
+		padding: 2em;
+		background-color:#ffffff;
+
+		border-radius: 25px;
+		box-shadow: 5px 5px 15px #000000;
+		border: 1px solid #ffffff;	
+	}
+
+/**********/
+/*** Id ***/
+/**********/
+
+	#boutons{
+		height:0px;
+		width:125px;
+		color:#ff0000;
+		position:fixed;
+		top:40%;
+		right:20%;
+
+		text-align:center;
+	}
+
+	#inputAge{
+		width:120px;
+		background-color:#c93;
+	}
+
+	#generation{
+		color:#168e1c;
+		border: 1px solid #def;
+		background: #6c3;
+		padding: 3px 30px;
+		width:125px;
+	}
+
+	#generation:hover{
+		border: 1px solid #6c3;
+		background: #fff;
+	}
+
+	#generation:active{
+		color:#676767;
+		border: 1px solid #676767;
+		background: #cccccc;
+	}
+
+	#reset{
+		color:#670000;
+		border: 1px solid #def;
+		background: #c33;
+		padding: 3px 30px;
+		width:125px;
+	}
+
+	#reset:hover{
+		border: 1px solid #c33;
+		background: #fff;
+	}
+
+	#reset:active{
+		color:#676767;
+		border: 1px solid #676767;
+		background: #cccccc;
+	}
